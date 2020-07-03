@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 0%;
+}
+
+body {
+    position: relative;
+    /* text-align: center; */
+}
+
+aside {
+
+    height: 300px;
+    /* position: absolute; */
+    margin: auto 0;
+    /* background-color: #C5ED4E
+     */
+    background-image: url(images/dan-gold-4_jhDO54BYg-unsplash.jpg);
+    background-size: cover;
+    background-origin: content-box;
+    background-position: top;
+    margin-bottom: 75px;
+}
+
+p {
+    color: #535c68
+}
+
+
+
+.slogan {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    /* border: green 2px solid; */
+    text-align: center;
+}
+
+.slogan__title-large {
+    /* color: #148153;
+     */
+    color: #F6F7F8;
+    font-size: 3.8rem;
+    padding-bottom: 25px;
+    font-family: 'Fredoka One', cursive;
+    /* text-shadow: 2px 2px #535c68; */
+    /* text-shadow: 1px 2px black; */
+    letter-spacing: 1px;
+}
+
+.slogan__title-small {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    background-color: #fff;
+    opacity: 0.9;
+    padding: 10px;
+    border-radius: 40px 0 40px 0;
+    box-shadow: 0 0 16px #000,
+        0 0 32px #000;
+    color: black;
+    mix-blend-mode: screen;
+}
+
+.button {
+    background: linear-gradient(to bottom, rgb(214, 244, 126) 35%, #A7D432 100%);
+    background-color: #148154;
+    /* border-radius: 28px; */
+    border: 1px solid #18ab29;
+    display: inline-block;
+    cursor: pointer;
+    color: #148153;
+    font-family: Arial;
+    font-size: 1rem;
+    padding: 10px 45px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #A7D432;
+    border-radius: 20px 0 20px 0;
+    opacity: 0.8;
+}
+
+.button:hover {
+    background: linear-gradient(to bottom, #148154 35%, #48BA6E 100%);
+    background-color: #C5ED4E;
+    border: 1px solid #A7D432;
+    color: #C5ED4E;
+    text-shadow: 0px 1px 0px #014815;
+}
+
+.button:active {
+    position: relative;
+    transform: scale(0.98);
+    /* top: 1px; */
+}
+
+/* .button--light {
+    position: absolute;
+    background: linear-gradient(to bottom, #148154 35%, #48BA6E 100%);
+    background-color: #C5ED4E;
+    border: 1px solid #A7D432;
+    color: #C5ED4E;
+    text-shadow: 0px 1px 0px #014815;
+    bottom: 50px;
+    right: 200px;
+} */
+.button--light {
+    position: absolute;
+    display: inline-block;
+    bottom: 50px;
+    right: 200px;
+    border-radius: 20px 0 20px 0;
+    padding: 10px 60px;
+    letter-spacing: 1.2px;
+    font-size: 1.4rem;
+    mix-blend-mode: luminosity;
+    box-shadow: 0 0 16px black, 0 0 32px black;
+}
+
+.button--light:hover {
+    /* background: linear-gradient(to bottom, rgb(214, 244, 126) 35%, #A7D432 100%);
+    background-color: #148154;
+    border: 1px solid #18ab29;
+    color: #148153;
+    text-shadow: 0px 1px 0px #A7D432; */
+}
+
+.button--input {
+    border: 1px solid #18ab29;
+    font-size: 0.8rem;
+    padding: 5px 20px;
+    text-shadow: 0px 1px 0px #A7D432;
+    border-radius: 10px 0 10px 0;
+}
+
+/* .nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    width: 100vw;
+} */
+.nav__company {
+    width: 300px;
+    text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50px;
+    margin-left: 30px;
+}
+
+.nav__picture {
+    width: 120px;
+    height: 120px;
+}
+
+.nav__name {
+    display: inline-block;
+    text-align: center;
+    width: 300px;
+    font-size: 3.2rem;
+    font-family: 'Fredoka One', cursive;
+    color: #148153;
+    margin-left: 30px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 1024px;
+    top: 350px;
+    left: auto;
+    right: 10vw;
+    /* border: orange dotted 2px; */
+}
+
+.nav__images {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav__image {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: auto;
+    width: 200px;
+    /* border: green dotted 2px; */
+    margin: 0 50px;
+    /* opacity: 0.4; */
+
+
+
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    vertical-align: middle;
+}
+
+.nav__link {
+
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    /* display: inline-block; */
+
+    margin: 0 20px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    opacity: 0.9;
+    padding: 5px;
+    color: white;
+    text-shadow: 2px 2px #148153;
+    display: inline-block;
+    /* vertical-align: middle; */
+    line-height: 130%
+}
+
+
+.nav__li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+    height: 60px;
+    /* background-image: url(images/dan-gold-4_jhDO54BYg-unsplash.jpg); */
+
+    border-radius: 70px 0 70px 0;
+
+
+
+}
+
+
+
+.nav__link--start {
+    display: inline-block;
+
+    width: 200px;
+    height: 60px;
+    /* position: absolute; */
+    background-image: url(images/one-leaf.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.nav__link--recipies {
+    /* display: inline-block; */
+    border-radius: 40px 0 40px 0;
+
+
+    width: 200px;
+    height: 60px;
+    /* position: absolute; */
+    /* top: 10px */
+    background-image: url(images/marisol-casben-QvkAQTNj4zk-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    /* vertical-align: middle; */
+}
+
+.nav__link--calories {
+
+    /* position: absolute; */
+}
+
+.nav__link--contact {
+
+    /* position: absolute; */
+}
+
+
+
+
+.nav__image--img1 {
+    background-image: url(images/tuxpi.com.1582404310.jpg);
+}
+
+.nav__image--img2 {
+    background-image: url(images/imgonline-com-ua-shape-REvAzl2flSn.png);
+}
+
+.nav__image--img3 {
+    background-image: url(images/imgonline-com-ua-shape-QAoDYyBm7d5fl.png);
+    height: 200px;
+}
+
+.nav__image--img4 {
+    background-image: url(images/imgonline-com-ua-shape-BcpNtjYhpLftfu.png);
+}
+
+/*  
+.nav__link--start {
+
+    position: absolute;
+}
+
+.nav__link--recipies {}
+
+.nav__link--calories {}
+
+.nav__link--contact {}
+ */
+
+
+/* .nav__finder {
+    width: 500px;
+    height: 50px;
+    position: absolute;
+    left: auto;
+    right: 40px;
+}
+.nav__input {
+    width: 300px;
+} */
+.main {
+    margin-top: 250px;
+}
+
+.main__title {
+    color: #148153;
+    font-size: 1.5rem;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.main__article {
+    padding: 20px 20px;
+    width: 80%;
+    margin: 60px auto;
+    text-align: justify;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.main__text {
+    width: 60%;
+}
+
+.main__text--even {
+    order: 2
+}
+
+.main__author {
+    padding-bottom: 10px;
+}
+
+.main__image {
+    width: 300px;
+    height: 250px;
+    border-radius: 40% 0 40% 0;
+    /* order: 1 */
+}
+
+.main__button {
+    /* margin-top: 50px; */
+    position: absolute;
+    left: auto;
+    right: 100px;
+    transform: translate(-50%, -50%)
+}
+
+.footer {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    background-color: #C5ED4E;
+    padding: 25px
+}
+
+.footer__text {
+    padding: 0 20px;
+    color: #3c9815;
+    border-left: olive 1px solid;
+    border-right: olive 1px solid;
+}
+
+.slogan__png {
+    width: 150px;
+    display: none;
+}
